@@ -8,5 +8,6 @@ type User struct {
 	Age      string `json:"Age"`
 	Location string `json:"Location"`
 	Email    string `gorm:"unique" json:"Email"`
+	Password string `json:"-"`
 	Zipcode  string `json:"Zipcode"`
 }
